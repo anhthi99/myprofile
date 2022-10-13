@@ -9,52 +9,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Filled" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css" />
     <link rel="stylesheet" href="private.css">
     <title>My Profile</title>
 </head>
 <body>
     <h1>My Profile</h1>
+    <h3>I'm a developer</h3>
     <div class="container">
         <div class="flash-text">
 
         </div>
         <article class="info" id="personal">
             <p class="info__title">Personal Information</p>
-            <p>Nguyen Anh Thi</p>
-            <address>32/14-16 Tu Hai Street, Ward 6, Tan Binh District, HCMC</address>
-            <div class="contact">
-                <ul>
-                    <li>
-                        <span class="material-icons-outlined">
-                            public
+            <div class="info__body">
+                <p class="info__body__name">NGUYEN ANH THI</p>
+                <address>32/14-16 Tu Hai Street, Ward 6, Tan Binh District, Ho Chi Minh City</address>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <span class="material-icons-outlined">
+                                public
+                                </span>
+                            <a href="https://www.facebook.com/anhthi1299/" target="_blank">Nguyễn Anh Thi</a>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                phone_iphone
                             </span>
-                        <a href="https://www.facebook.com/anhthi1299/" target="_blank">Nguyễn Anh Thi</a>
-                    </li>
-                    <li>
-                        <span class="material-icons-outlined">
-                            phone_iphone
-                        </span>
-                        <a href="tel:0965735177">0965735177</a>
-                    </li>
-                    <li>
-                        <span class="material-icons-outlined">
-                            email
-                        </span>
-                         <a href="mailto:thi12171999@gmail.com">thi12171999@gmail.com</a>
-                    </li>
-                </ul>
-                
+                            <a href="tel:0965735177">0965735177</a>
+                        </li>
+                        <li>
+                            <span class="material-icons-outlined">
+                                email
+                            </span>
+                             <a href="mailto:thi12171999@gmail.com">thi12171999@gmail.com</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="skills">
+                    <!-- <p class="skills__title">Skills</p> -->
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                        <li>NodeJS</li>
+                        <li>Flutter Basic</li>
+                    </ul>
+                </div>
             </div>
+            
         </article>
         
         <article class="education" id="education">
             <p class="education__title">Education</p>
             <ul>
-                <li>#2017-2020</li>
-                <li style="padding: 0 20px">
+                <li class="period">#2017-2020</li>
+                <li class="place">
                     <a>CAO THANG TECHNICAL COLLEGE</a>
                 </li>
-                <li style="padding: 0 30px"><span>Software Technology</span></li>
+                <li class="description"><span>Software Technology</span></li>
             </ul>
             
             
@@ -62,16 +78,20 @@
         <article class="experience" id="experience">
             <p class="experience__title">Experience</p>
             <ul>
-                <li>#2017-NOW</li>
-                <li style="padding: 0 20px"><span>RYOMO VIETNAM SOLUTIONS</span></li>
-                <li style="padding: 0 30px"><span>-E-Government project (taxes, insurance and welfare) from Japanese customers</span></li>
-                <li style="padding: 0 30px"><span>-Using ReactJS, Oracle database and Java web service</span></li>
+                <li class="period">#2017-NOW</li>
+                <li class="place"><span>RYOMO VIETNAM SOLUTIONS</span></li>
+                <li class="description"><span>E-Government project (taxes, insurance and welfare) from Japanese customers</span></li>
+                <li class="description"><span>Using ReactJS, Oracle database and Java web service</span></li>
             </ul>
         </article>
         <article class="projects" id="projects">
-            <p class="projects__title">My Projects</p>
+            <p class="projects__title">Projects</p>
+            <ul>
+                <li><span>More information:
+                    <a href="https://github.com/anhthi99?tab=repositories" target="_blank" style="color: #32ffff">Github</a>
+                </span></li>            
+            </ul>
             
-            More information: <a href="https://github.com/anhthi99?tab=repositories" target="_blank" style="color: #32ffff">Github</a>
         </article>
     </div>
 
