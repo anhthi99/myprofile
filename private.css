@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all .5s;
+}
+/**
+ * Standardize
+ */
+body{
+    background-color: #111;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+    /* display: inline-block; */
+    padding: 5px;
+    /* line-height: 5px; */
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+h1{
+    text-align: center;
+    color: #fff;
+    text-shadow: 5px 5px 30px #cacaca;
+}
+
+.map{
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* background-color: #ce1f1f; */
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 7vw; */
+}
+
+.map li{
+    display: flex;
+}
+
+.map li a{
+    transition: .3s;
+}
+
+.map li:nth-child(2) a{
+    color: #5b4dff;
+}
+.map li:nth-child(3) a{
+    color: #a558fc;
+}
+.map li:nth-child(4) a{
+    color: #f00741;
+}
+.map li:nth-child(5) a{
+    color: #f0e807;
+}
+
+.map li a:hover::before{
+    /* text-shadow: 5px 5px 50px #111; */
+    /* content: '⚔'; */
+    /* box-shadow: 5px 5px 50px #111; */
+    border-radius: 10px;
+    
+    
+}
+
+.map li a:hover {
+    padding-left: 3px;
+    /* text-shadow: 0 10px 10px red; */
+}
+
+.active a {
+    border-bottom: 2px solid #ff0000;
+}
+
+.container{
+    padding: 0 7vw;
+}
+
+.info{
+    /* background-color: #aa33ff; */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 1vw 1vh;
+}
+
+/* .contact{
+    background-color: #3cc333;
+} */
+
+.contact ul {
+    /* display: inline-block; */
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+}
+
+.contact ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact ul li:hover a{
+    color: #acc399;
+}
+
+.contact ul li:hover .material-icons-outlined{
+    animation: shake .3s ease;
+    /* animation-iteration-count: infinite; */
+}
+
+.info__title{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 40px #fff;
+}
+
+.projects__title{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 40px #fff;
+}
+
+.education__title{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 40px #fff;
+}
+
+.experience__title{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 40px #fff;
+}
+
+@keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

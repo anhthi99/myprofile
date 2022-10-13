@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Filled" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="private.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <div class="container">
+        <div class="flash-text">
+
+        </div>
+        <article class="info" id="personal">
+            <p class="info__title">Personal Information</p>
+            <p>Nguyen Anh Thi</p>
+            <address>32/14-16 Tu Hai Street, Ward 6, Tan Binh District, HCMC</address>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <span class="material-icons-outlined">
+                            public
+                            </span>
+                        <a href="https://www.facebook.com/anhthi1299/" target="_blank">Nguyễn Anh Thi</a>
+                    </li>
+                    <li>
+                        <span class="material-icons-outlined">
+                            phone_iphone
+                        </span>
+                        <a href="tel:0965735177">0965735177</a>
+                    </li>
+                    <li>
+                        <span class="material-icons-outlined">
+                            email
+                        </span>
+                         <a href="mailto:thi12171999@gmail.com">thi12171999@gmail.com</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </article>
+        
+        <article class="education" id="education">
+            <p class="education__title">Education</p>
+            <ul>
+                <li>#2017-2020</li>
+                <li style="padding: 0 20px">
+                    <a>CAO THANG TECHNICAL COLLEGE</a>
+                </li>
+                <li style="padding: 0 30px"><span>Software Technology</span></li>
+            </ul>
+            
+            
+        </article>
+        <article class="experience" id="experience">
+            <p class="experience__title">Experience</p>
+            <ul>
+                <li>#2017-NOW</li>
+                <li style="padding: 0 20px"><span>RYOMO VIETNAM SOLUTIONS</span></li>
+                <li style="padding: 0 30px"><span>-E-Government project (taxes, insurance and welfare) from Japanese customers</span></li>
+                <li style="padding: 0 30px"><span>-Using ReactJS, Oracle database and Java web service</span></li>
+            </ul>
+        </article>
+        <article class="projects" id="projects">
+            <p class="projects__title">My Projects</p>
+            
+            More information: <a href="https://github.com/anhthi99?tab=repositories" target="_blank" style="color: #32ffff">Github</a>
+        </article>
+    </div>
+
+    <ul class="map">
+        <p style="font-size: 1.3em; color:deepskyblue">Map</p>
+        <li>
+            <span class="material-icons">
+                contact_page
+                </span>                
+            <a name="#personal" href="#personal">Personal</a>
+        </li>
+        <li>
+            <span class="material-icons">
+                school
+                </span>                
+            <a name="#education" href="#education">Education</a>
+        </li>
+        <li>
+            <span class="material-icons">
+                timeline
+                </span>                
+            <a name="#experience" href="#experience">Experience</a>
+        </li>
+        <li>
+            <span class="material-icons">
+                checklist
+                </span>
+                
+            <a name="#projects" href="#projects">Projects</a></li>
+    </ul>
+    
+</body>
+<script>
+    const ul = document.getElementsByClassName("map")[0];
+    
+    window.addEventListener("load", (ev) => {
+        const hash = window.location.hash;
+        updateHaschanged(hash);
+    })
+
+    function updateHaschanged(hash){
+        for(const e of ul.getElementsByTagName("li")){
+            const aTag = e.getElementsByTagName("a")[0];
+            if(aTag.name === hash){
+                e.className = "active";
+            }
+            else{
+                e.className = "";
+            }
+        }
+    }
+
+    window.addEventListener("hashchange", (ev) => {
+        const hash = ev.currentTarget.location.hash;
+        updateHaschanged(hash);        
+    })
+
+</script>
+</html>

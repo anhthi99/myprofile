@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1{
+    color: #cfcfcf;
+    text-shadow: 5px 5px 100px #cdcdcd;
+}
+
+a{
+    position: relative;
+    color: lightblue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+
+a:hover{
+    color: rgb(46, 6, 163);
+    background-color: #cfcfcf;
+    box-shadow: 2px 2px 100px 10px #cfcfcf, 5px 5px 20px #c31faa;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+a span{
+    position: absolute;
+    /* border-radius: 10px; */
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #c31faa, #cfcfcf);
+    transition: width .25s linear;
+}
+a:hover span:nth-child(1){
+    width: 100%;
+    background: linear-gradient(to right, #c31faa, #cfcfcf);
+}
+
+a span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+    background: linear-gradient(to bottom, #c31faa, #cfcfcf);
+    transition: height .25s linear;
+    /* transition-delay: .25s; */
+}
+a:hover span:nth-child(2){
+    height: 100%;
+    background: linear-gradient(to bottom, #c31faa, #cfcfcf);
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to left, #c31faa, #cfcfcf);
+    transition: width .25s linear;
+    /* transition-delay: .25s; */
+}
+a:hover span:nth-child(3){
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, #c31faa, #cfcfcf);
+    
+}
+
+a span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+    background: linear-gradient(to top, #c31faa, #cfcfcf);
+    transition: height .25s linear;
+    /* transition-delay: .25s; */
+}
+a:hover span:nth-child(4){
+    height: 100%;
+    background: linear-gradient(to top, #c31faa, #cfcfcf);
+}
