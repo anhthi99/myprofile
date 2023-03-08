@@ -34,6 +34,45 @@ p{
     color: #fff;
     position: absolute;
     z-index: 100;
+    text-align: center;
+}
+
+.wrapper-title button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper-title button:nth-child(3){
+    background-color: #000090;
+    color: #fff;
+    animation: scale 1.5s alternate linear;
+}
+.wrapper-title button:nth-child(4){
+    background-color: #2b2bc7;
+    color: #fff;
+    animation: scale 1.5s alternate linear;
+}
+.wrapper-title button:nth-child(5){
+    background-color: #ca1309;
+    color: #fff;
+    animation: scale 1.5s alternate linear;
+}
+.wrapper-title button:nth-child(6){
+    background-color: #430164;
+    color: #fff;
+    animation: scale 1.5s alternate linear;
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .wrapper-title p:nth-child(1){
@@ -169,4 +208,39 @@ p{
 
 .particles-js-canvas-el{
     z-index: 1;
+}
+
+.electron-item {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    /* background-color: red; */
+    /* mix-blend-mode: color; */
+    animation: spin 3s infinite linear;
+}
+
+.electron-item > img:hover{
+    transform: scale(1.5);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        /* transform: scale(1.2); */
+    }
+    to {
+        /* transform: scale(1); */
+        transform: rotate(359deg);
+      }
+}
+
+.electron-item img{
+    border-radius: 100%;
+    object-fit: cover;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    mix-blend-mode: lighten;
 }
