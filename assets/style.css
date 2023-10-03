@@ -45,10 +45,16 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.wrapper-title button:nth-child(3){
-    background-color: #000090;
-    color: #fff;
-    animation: scale 1.5s alternate linear;
+.wrapper-title a{
+    /* background-color: #000090; */
+    /* color: #fff; */
+    /* animation: scale 1.5s alternate linear; */
+    display: block;
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    text-decoration: none;
+    color: #fffccc;
 }
 .wrapper-title button:nth-child(4){
     background-color: #2b2bc7;
@@ -78,6 +84,11 @@ p{
 .wrapper-title p:nth-child(1){
     animation: move_from_left 2s linear;
     text-align: center;
+    font-family: dock11heavy;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .wrapper-title p:nth-child(2){
@@ -98,61 +109,6 @@ p{
     bottom: 0;
     animation: scroll_text 1s ease-in-out;
     animation-iteration-count: infinite;
-}
-
-.education{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(#3233ff, #3fffee);
-    color: #fff;
-}
-
-.education-title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    /* text-align: center; */
-}
-
-.schools-block{
-    display: flex;
-    justify-content: space-around;
-}
-
-.schools{
-    background-image: linear-gradient(to bottom, #23ffff, #3233ff);
-    object-fit: contain;
-    width: 45vw;
-    height: 50vh;
-    
-    /* padding: 0 5px; */
-    border-radius: 10px;
-}
-
-.schools-title{
-    /* width: 100%; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 2.3em;
-    font-weight: bold;
-    text-align: center;
-    background-color: #32aaaa;
-    padding: 5px 0;
-    /* text-rendering: ; */
-}
-
-.schools-major{
-    font-size: 1.8em;
-    background-color: #10C5DA;
-}
-
-.star{
-    position: absolute;
-    border-radius: 50%;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    box-shadow: 1px 1px 40px 5px #fff;
-    transition: all .5s linear;
 }
 
 @keyframes move_from_left {
@@ -192,6 +148,9 @@ p{
     .wrapper-title{
         font-size: 48px;
     }
+    .wrapper-title p:nth-child(1){
+        font-size: 1.2em;
+    }
 
     .schools{
         display: block;
@@ -210,37 +169,3 @@ p{
     z-index: 1;
 }
 
-.electron-item {
-    position: absolute;
-    width: 80px;
-    height: 50px;
-    border-radius: 50%;
-    /* background-color: #fff; */
-    /* background-color: red; */
-    /* mix-blend-mode: color; */
-    animation: spin 3s infinite linear;
-}
-
-.electron-item > img:hover{
-    transform: scale(1.5);
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-        /* transform: scale(1.2); */
-    }
-    to {
-        /* transform: scale(1); */
-        transform: rotate(359deg);
-      }
-}
-
-.electron-item img{
-    border-radius: 100%;
-    object-fit: cover;
-    background-size: cover;
-    width: auto;
-    height: 100%;
-    mix-blend-mode: lighten;
-}
